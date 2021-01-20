@@ -38,11 +38,11 @@ switch(myDay) {
         // alert("It's Monday!");
         today = "Monday";
         coffee = {
-            name: "who knows yet",
-            pic: "pic-src",
-            alt: "alt",
-            color: "color",
-            desc: `desc`,
+            name: "Pumpkin Spice Latte",
+            pic: "images/pumpkin-spice-latte.jpg",
+            alt: "A picture of a pumpkin spice latte.",
+            color: "#FF7518",
+            desc: `, which makes us wish it was always Fall, as this is one of our top sellers!`,
             day: "Monday"
         };
         break;
@@ -68,7 +68,7 @@ switch(myDay) {
             pic: "images/drip.jpg",
             alt: "A picture of a drip coffee",
             color: "burlywood",
-            desc: `desc`,
+            desc: `, aka coffee made by letting boiling water drip slowly through finely ground coffee. With a strong, bold flavor, we're sure you're going to love it!`,
             day: "Wednesday"
         };
         break;
@@ -114,14 +114,14 @@ switch(myDay) {
     
     default:
         alert("Something has gone terribly wrong. Please contact my maker.");
-        today = "404 error today not found";
+        today = "404 error day not found";
         coffee = {
             name: "Coffee unavailable, today does not exist.",
-            pic: "pic-src",
-            alt: "alt",
-            color: "color",
-            desc: `desc`,
-            day: "404 error today not found"
+            pic: "images/missing-coffee.jpg",
+            alt: "A wanted poster for a cup of coffee.",
+            color: "firebrick",
+            desc: `There cannot be a description for coffee that does not exist.`,
+            day: "404 error day not found"
         };
         break;
 }
