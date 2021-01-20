@@ -43,4 +43,4 @@ switch(myDay) {
         break;
 }
 
-alert("I'm in a different folder and file now!");
+// alert("I'm in a different folder and file now!");
