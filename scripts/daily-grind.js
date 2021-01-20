@@ -11,6 +11,15 @@ let myDay = myDate.getDay();
 let today = "";
 let coffee = "";
 
+function coffeeTemplate(coffee) {
+    let myReturn = "";
+    myReturn += `<p>
+                    <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee"/>
+                    <strong class="feature">${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong> ${coffee.desc}
+                </p>`;
+    return myReturn;
+}
+
 switch(myDay) {
     case 0:
         // alert("It's Sunday!");
@@ -107,7 +116,7 @@ switch(myDay) {
         alert("Something has gone terribly wrong. Please contact my maker.");
         today = "404 error today not found";
         coffee = {
-            name: "who knows yet",
+            name: "Coffee unavailable, today does not exist.",
             pic: "pic-src",
             alt: "alt",
             color: "color",
@@ -119,6 +128,6 @@ switch(myDay) {
 
 console.log(coffee);
 
-document.getElementById("coffee-output").innerHTML = today;
+document.getElementById("coffee-output").innerHTML = coffeeTemplate(coffee);
 
 // alert("I'm in a different folder and file now!");
