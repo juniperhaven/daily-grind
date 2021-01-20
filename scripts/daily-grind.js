@@ -106,10 +106,19 @@ switch(myDay) {
     default:
         alert("Something has gone terribly wrong. Please contact my maker.");
         today = "404 error today not found";
-        coffee = {};
+        coffee = {
+            name: "who knows yet",
+            pic: "pic-src",
+            alt: "alt",
+            color: "color",
+            desc: `desc`,
+            day: "404 error today not found"
+        };
         break;
 }
 
 console.log(coffee);
+
+document.getElementById("coffee-output").innerHTML = today;
 
 // alert("I'm in a different folder and file now!");
