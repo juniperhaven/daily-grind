@@ -15,11 +15,8 @@ function coffeeTemplate(coffee) {
     let myReturn = "";
     myReturn += `<p>
                     <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee"/>
-                    <strong class="feature">${coffee.day}'s Coffee Special:</strong><br> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong> ${coffee.desc}
+                    <strong class="feature">${coffee.day}'s Coffee Special:</strong><br> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>${coffee.desc}
                 </p>`;
-    
-    // I have NO goddamn idea how you are meant to set the color of the HTML instead of the BODY, the fact that they set the HTML color instead of just making a div is fucking stupid, they're stupid, and the Panopto recording isn't out yet so fuck me I guess.
-
     return myReturn;
 }
 
@@ -31,92 +28,85 @@ function changeColor() {
 
 switch(myDay) {
     case 0:
-        // alert("It's Sunday!");
         today = "Sunday";
         coffee = {
-            name: "who knows yet",
-            pic: "pic-src",
-            alt: "alt",
-            color: "color",
-            desc: `desc`,
+            name: "espresso con panna",
+            pic: "panna.jpg",
+            alt: "A picture of an espress topped with whipped cream and cinnamon in a white ceramic cup.",
+            color: "plum",
+            desc: `. Brought to you from Italy, the espresso con panna is a simple but delicious drink. Consisting of espresso topped with a small mountain of whipped cream and a dusting of cinnamon, it's a truly decadent, and we know you're going to love it!`,
             day: "Sunday"
         };
         break;
 
     case 1:
-        // alert("It's Monday!");
         today = "Monday";
         coffee = {
-            name: "Pumpkin Spice Latte",
+            name: "pumpkin spice latte",
             pic: "images/pumpkin-spice-latte.jpg",
-            alt: "A picture of a pumpkin spice latte.",
+            alt: "A picture of a pumpkin spice latte in an orange ceramic mug.",
             color: "#FF7518",
-            desc: `, which makes us wish it was always fall, as this is one of our top sellers!`,
+            desc: `, which makes us wish it was always fall, as this is one of our top sellers!<br>Made with cinnamon, nutmeg, ground clove, just a touch of pumpkin puree, and (of course) sugar, this is sure to be the best pumpkin spice latte you've ever tasted!`,
             day: "Monday"
         };
         break;
 
     case 2:
-        // alert("It's Tuesday!");
         today = "Tuesday";
         coffee = {
-            name: "who knows yet",
-            pic: "pic-src",
-            alt: "alt",
-            color: "color",
-            desc: `desc`,
+            name: "milky way cappuccino",
+            pic: "milky-way.jpg",
+            alt: "A milky way cappuccino in a white ceramic cup with an intricate flower-like design in caramel and chocolate on the top.",
+            color: "cornflowerblue",
+            desc: `. Our milky way cappuccino is to die for. Made with milk chocolate, caramel, and topped with whipped cream and swirls of milk chocolate and caramel syrups in an intricate pattern, this drink is heaven in a cup!<br>The milky way is also available as a latte, if that's more your style.`,
             day: "Tuesday"
         };
         break;
 
     case 3:
-        // alert("It's Wednesday!");
         today = "Wednesday";
         coffee = {
-            name: "Drip Coffee",
+            name: "drip coffee",
             pic: "images/drip.jpg",
             alt: "A picture of a drip coffee.",
             color: "burlywood",
-            desc: `, made with natural spring water boiled and then slowly poured over finely ground coffee. With a strong, bold flavor, we're sure you're going to love it!`,
+            desc: `, made with natural spring water boiled and then slowly poured over finely ground coffee beans. With a strong, bold flavor, we're sure you're going to love it!<br>Our drip coffee is usually made with dark roasted coffee beans, but medium roast and light roast are available on request!`,
             day: "Wednesday"
         };
         break;
 
     case 4:
-        // alert("It's Thursday!");
         today = "Thursday";
         coffee = {
-            name: "who knows yet",
-            pic: "pic-src",
-            alt: "alt",
+            name: "mocha",
+            pic: "images/mocha.jpg",
+            alt: "A picture of a mocha in a white ceramic coffee cup.",
             color: "violet",
-            desc: `desc`,
+            desc: `. Our mochas are made with the finest dark cocoa powder and topped with a milk chocolate drizzle.<br>If you'd like to add a bit of a kick, ask for our Mexican mocha, which has chili powder added to it!`,
             day: "Thursday"
         };
         break;
     
     case 5:
-        // alert("It's Friday!");
         today = "Friday";
         coffee = {
-            name: "who knows yet",
-            pic: "pic-src",
-            alt: "alt",
-            color: "color",
-            desc: `desc`,
+            name: "caffè macchiato",
+            pic: "macchiato.jpg",
+            alt: "A picture of a macchiato, an espresso shot with steamed milk in a small glass cup.",
+            color: "peachpuff",
+            desc: `. Our caffè macchiato is made with the finest dark roast ground coffee beans, for maximum flavor in your espresso. The steamed milk adds just a touch of sweetness to the shot--if you're an espresso lover, this is the drink for you!`,
             day: "Friday"
         };
         break;
 
     case 6:
-        // alert("It's Saturday!");
         today = "Saturday";
         coffee = {
-            name: "who knows yet",
-            pic: "pic-src",
-            alt: "alt",
-            color: "color",
-            desc: `desc`,
+            name: "lavender latte",
+            pic: "lavender-latte.jpg",
+            alt: "A lavender latte in a white ceramic cup, sprinkled with dried lavender.",
+            color: "silver",
+            desc: `. We know, it's an unusual one! But we find the lavender latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried lavender, this one's a shop favorite.`,
             day: "Saturday"
         };
         break;
