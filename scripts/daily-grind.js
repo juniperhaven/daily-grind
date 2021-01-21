@@ -15,7 +15,7 @@ function coffeeTemplate(coffee) {
     let myReturn = "";
     myReturn += `<p>
                     <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee"/>
-                    <strong class="feature">${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong> ${coffee.desc}
+                    <strong class="feature">${coffee.day}'s Coffee Special:</strong><br> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong> ${coffee.desc}
                 </p>`;
     return myReturn;
 }
@@ -68,7 +68,7 @@ switch(myDay) {
             pic: "images/drip.jpg",
             alt: "A picture of a drip coffee.",
             color: "burlywood",
-            desc: `. With a strong, bold flavor, we're sure you're going to love it!`,
+            desc: `, made with natural spring water boiled and then slowly poured over finely ground coffee. With a strong, bold flavor, we're sure you're going to love it!`,
             day: "Wednesday"
         };
         break;
