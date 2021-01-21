@@ -66,7 +66,7 @@ switch(myDay) {
         coffee = {
             name: "Drip Coffee",
             pic: "images/drip.jpg",
-            alt: "A picture of a drip coffee",
+            alt: "A picture of a drip coffee.",
             color: "burlywood",
             desc: `, aka coffee made by letting boiling water drip slowly through finely ground coffee. With a strong, bold flavor, we're sure you're going to love it!`,
             day: "Wednesday"
