@@ -42,7 +42,7 @@ switch(myDay) {
             pic: "images/pumpkin-spice-latte.jpg",
             alt: "A picture of a pumpkin spice latte.",
             color: "#FF7518",
-            desc: `, which makes us wish it was always Fall, as this is one of our top sellers!`,
+            desc: `, which makes us wish it was always fall, as this is one of our top sellers!`,
             day: "Monday"
         };
         break;
@@ -68,7 +68,7 @@ switch(myDay) {
             pic: "images/drip.jpg",
             alt: "A picture of a drip coffee.",
             color: "burlywood",
-            desc: `, aka coffee made by letting boiling water drip slowly through finely ground coffee. With a strong, bold flavor, we're sure you're going to love it!`,
+            desc: `. With a strong, bold flavor, we're sure you're going to love it!`,
             day: "Wednesday"
         };
         break;
