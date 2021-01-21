@@ -17,7 +17,16 @@ function coffeeTemplate(coffee) {
                     <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee"/>
                     <strong class="feature">${coffee.day}'s Coffee Special:</strong><br> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong> ${coffee.desc}
                 </p>`;
+    
+    // I have NO goddamn idea how you are meant to set the color of the HTML instead of the BODY, the fact that they set the HTML color instead of just making a div is fucking stupid, they're stupid, and the Panopto recording isn't out yet so fuck me I guess.
+
     return myReturn;
+}
+
+function changeColor() {
+    var declaration = document.styleSheets[1].cssRules[0].style;
+    var setProp = declaration.setProperty("background-color", coffee.color);
+    return setProp;
 }
 
 switch(myDay) {
@@ -80,7 +89,7 @@ switch(myDay) {
             name: "who knows yet",
             pic: "pic-src",
             alt: "alt",
-            color: "color",
+            color: "violet",
             desc: `desc`,
             day: "Thursday"
         };
@@ -129,5 +138,6 @@ switch(myDay) {
 console.log(coffee);
 
 document.getElementById("coffee-output").innerHTML = coffeeTemplate(coffee);
-
-// alert("I'm in a different folder and file now!");
+document.getElementsByClassName("feature")[0].style.color = coffee.color;
+document.getElementsByClassName("feature")[1].style.color = coffee.color;
+changeColor();
