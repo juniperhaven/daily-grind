@@ -20,18 +20,29 @@ function coffeeTemplate(coffee) {
     return myReturn;
 }
 
+/* this function was how I first accomplished changing the HTML background color
+but then I realized you can change it without needing a function
+still, I wrote the function, so I've opted to leave it in
+it contains useful comments
+and maybe I'll want it later, who knows
+
 function changeColor() {
-    var declaration = document.styleSheets[1].cssRules[0].style;
-    var setProp = declaration.setProperty("background-color", coffee.color);
-    return setProp;
-}
+    var doc = document.styleSheets[1].cssRules[0].style; 
+    
+    styleSheets[1] references the styles that are in the HTML document, because the default CSS file is [0]; cssRules[0] references the very first rule, which is in this case the background color of the HTML, which is the thing we're trying to change
+    I accidentally referenced the wrong style sheet at first and I learned that you apparently can't change the default CSS file from here because you can't access 'cross-origin stylesheets'
+    so that's a thing I might look into more at some point
+
+    var setColor = doc.setProperty("background-color", coffee.color);
+    return setColor;
+} */
 
 switch(myDay) {
     case 0:
         today = "Sunday";
         coffee = {
             name: "espresso con panna",
-            pic: "panna.jpg",
+            pic: "images/panna.jpg",
             alt: "A picture of an espress topped with whipped cream and cinnamon in a white ceramic cup.",
             color: "plum",
             desc: `. Brought to you from Italy, the espresso con panna is a simple but delicious drink. Consisting of espresso topped with a small mountain of whipped cream and a dusting of cinnamon, it's a truly decadent, and we know you're going to love it!`,
@@ -55,7 +66,7 @@ switch(myDay) {
         today = "Tuesday";
         coffee = {
             name: "milky way cappuccino",
-            pic: "milky-way.jpg",
+            pic: "images/milky-way.jpg",
             alt: "A milky way cappuccino in a white ceramic cup with an intricate flower-like design in caramel and chocolate on the top.",
             color: "cornflowerblue",
             desc: `. Our milky way cappuccino is to die for. Made with milk chocolate, caramel, and topped with whipped cream and swirls of milk chocolate and caramel syrups in an intricate pattern, this drink is heaven in a cup!<br>The milky way is also available as a latte, if that's more your style.`,
@@ -79,7 +90,7 @@ switch(myDay) {
         today = "Thursday";
         coffee = {
             name: "mocha",
-            pic: "images/mocha.jpg",
+            pic: "images/mocha.png",
             alt: "A picture of a mocha in a white ceramic coffee cup.",
             color: "violet",
             desc: `. Our mochas are made with the finest dark cocoa powder and topped with a milk chocolate drizzle.<br>If you'd like to add a bit of a kick, ask for our Mexican mocha, which has chili powder added to it!`,
@@ -91,7 +102,7 @@ switch(myDay) {
         today = "Friday";
         coffee = {
             name: "caffè macchiato",
-            pic: "macchiato.jpg",
+            pic: "images/macchiato.jpg",
             alt: "A picture of a macchiato, an espresso shot with steamed milk in a small glass cup.",
             color: "peachpuff",
             desc: `. Our caffè macchiato is made with the finest dark roast ground coffee beans, for maximum flavor in your espresso. The steamed milk adds just a touch of sweetness to the shot--if you're an espresso lover, this is the drink for you!`,
@@ -103,7 +114,7 @@ switch(myDay) {
         today = "Saturday";
         coffee = {
             name: "lavender latte",
-            pic: "lavender-latte.jpg",
+            pic: "images/lavender-latte.jpg",
             alt: "A lavender latte in a white ceramic cup, sprinkled with dried lavender.",
             color: "silver",
             desc: `. We know, it's an unusual one! But we find the lavender latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried lavender, this one's a shop favorite.`,
@@ -128,6 +139,8 @@ switch(myDay) {
 console.log(coffee);
 
 document.getElementById("coffee-output").innerHTML = coffeeTemplate(coffee);
+
+// the following code is the only way I found to change all the colored text and the HTML background color
 document.getElementsByClassName("feature")[0].style.color = coffee.color;
 document.getElementsByClassName("feature")[1].style.color = coffee.color;
-changeColor();
+document.styleSheets[1].cssRules[0].style.setProperty("background-color", coffee.color);
