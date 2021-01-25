@@ -56,7 +56,7 @@ switch(myDay) {
             pic: "images/panna.jpg",
             alt: "A picture of an espress topped with whipped cream and cinnamon in a white ceramic cup.",
             color: "plum",
-            desc: `. Brought to you from Italy, the espresso con panna is a simple but delicious drink.<br>Consisting of espresso topped with a small mountain of whipped cream and a dusting of cinnamon, it's a truly decadent, and we know you're going to love it!`,
+            desc: `.<br>Brought to you from Italy, the espresso con panna is a simple but delicious drink. Consisting of espresso topped with a small mountain of whipped cream and a dusting of cinnamon, it's a truly decadent, and we know you're going to love it!`,
             day: "Sunday"
         };
         break;
@@ -68,7 +68,7 @@ switch(myDay) {
             pic: "images/pumpkin-spice-latte.jpg",
             alt: "A picture of a pumpkin spice latte in an orange ceramic mug.",
             color: "#FF7518",
-            desc: `, which makes us wish it was always fall, as this is one of our top sellers!<br>Made with cinnamon, nutmeg, ground clove, just a touch of pumpkin puree, and (of course) sugar, this is sure to be the best pumpkin spice latte you've ever tasted!`,
+            desc: `.<br>Our pumpkin spice latte makes us wish it was always fall, as this is one of our top sellers! Made with cinnamon, nutmeg, ground clove, just a touch of pumpkin puree, and (of course) sugar, this is sure to be the best pumpkin spice latte you've ever tasted!`,
             day: "Monday"
         };
         break;
@@ -80,7 +80,7 @@ switch(myDay) {
             pic: "images/milky-way.jpg",
             alt: "A milky way cappuccino in a white ceramic cup with an intricate flower-like design in caramel and chocolate on the top.",
             color: "cornflowerblue",
-            desc: `. Our milky way cappuccino is to die for.<br>Made with milk chocolate, caramel, and topped with whipped cream and swirls of milk chocolate and caramel syrups in an intricate pattern, this drink is heaven in a cup!<br>The milky way is also available as a latte, if that's more your style.`,
+            desc: `.<br>Our milky way cappuccino is to die for. Made with milk chocolate, caramel, and topped with whipped cream and swirls of milk chocolate and caramel syrups in an intricate pattern, this drink is heaven in a cup!<br>The milky way is also available as a latte, if that's more your style.`,
             day: "Tuesday"
         };
         break;
@@ -92,7 +92,7 @@ switch(myDay) {
             pic: "images/drip.jpg",
             alt: "A picture of a drip coffee.",
             color: "burlywood",
-            desc: `, made with natural spring water boiled and then slowly poured over finely ground coffee beans. With a strong, bold flavor, we're sure you're going to love it!<br>Our drip coffee is usually made with dark roasted coffee beans, but medium roast and light roast are available on request!`,
+            desc: `.<br>Made with natural spring water boiled and then slowly poured over finely ground coffee beans. With a strong, bold flavor, we're sure you're going to love it!<br>Our drip coffee is usually made with dark roasted coffee beans, but medium roast and light roast are available on request!`,
             day: "Wednesday"
         };
         break;
@@ -104,7 +104,7 @@ switch(myDay) {
             pic: "images/mocha.png",
             alt: "A picture of a mocha in a white ceramic coffee cup.",
             color: "violet",
-            desc: `. Our mochas are made with the finest dark cocoa powder and topped with a milk chocolate drizzle.<br>If you'd like to add a bit of a kick, ask for our Mexican mocha, which has chili powder added to it!`,
+            desc: `.<br>Our mochas are made with the finest dark cocoa powder and topped with a dash of whipped cream and a milk chocolate drizzle that we make ourselves right here in the shop.<br>If you'd like to add a bit of a kick, ask for our Mexican mocha, which has chili powder added to it!`,
             day: "Thursday"
         };
         break;
@@ -116,7 +116,7 @@ switch(myDay) {
             pic: "images/macchiato.jpg",
             alt: "A picture of a macchiato, an espresso shot with steamed milk in a small glass cup.",
             color: "peachpuff",
-            desc: `. Our caffè macchiato is made with the finest dark roast ground coffee beans, for maximum flavor in your espresso.<br>The steamed milk adds just a touch of sweetness to the shot--if you're an espresso lover, this is the drink for you!`,
+            desc: `.<br>Our caffè macchiato is made with the finest dark roast ground coffee beans, for maximum flavor in your espresso. The steamed milk adds just a touch of sweetness to the shot--if you're an espresso lover, this is the drink for you!`,
             day: "Friday"
         };
         break;
@@ -128,7 +128,7 @@ switch(myDay) {
             pic: "images/lavender-latte.jpg",
             alt: "A lavender latte in a white ceramic cup, sprinkled with dried lavender.",
             color: "silver",
-            desc: `. We know, it's an unusual one! But we find the lavender latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend!<br>Made with our homemade lavender simple syrup and sprinkled with a touch of dried lavender, this one's a shop favorite.`,
+            desc: `.<br>We know, it's an unusual one! But we find the lavender latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried lavender, this one's a shop favorite.`,
             day: "Saturday"
         };
         break;
