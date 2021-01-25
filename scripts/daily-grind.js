@@ -7,9 +7,20 @@ desc - description
 day - day of the week */
 
 let myDate = new Date();
-let myDay = myDate.getDay();
+let myDay = "";
 let today = "";
 let coffee = "";
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+if(urlParams.has('day')) {
+    myDay = urlParams.get('day');
+}
+else {
+    myDay = myDate.getDay();
+}
+
+myDay = parseInt(myDay);
 
 function coffeeTemplate(coffee) {
     let myReturn = "";
@@ -126,11 +137,11 @@ switch(myDay) {
         alert("Something has gone terribly wrong. Please contact my maker.");
         today = "404 error day not found";
         coffee = {
-            name: "Coffee unavailable, today does not exist.",
-            pic: "images/missing-coffee.jpg",
+            name: "coffee unavailable, today does not exist.",
+            pic: "images/missing-coffee.png",
             alt: "A wanted poster for a cup of coffee.",
-            color: "firebrick",
-            desc: `There cannot be a description for coffee that does not exist.`,
+            color:  "firebrick",
+            desc: ` There cannot be a description for coffee that does not exist.`,
             day: "404 error day not found"
         };
         break;
@@ -140,7 +151,8 @@ console.log(coffee);
 
 document.getElementById("coffee-output").innerHTML = coffeeTemplate(coffee);
 
-// the following code is the only way I found to change all the colored text and the HTML background color
+// the following code is the way I found to change all the colored text and the HTML background color
+// and it works so I'm sticking with it even though I know you demonstrated something else in class, Bill
 document.getElementsByClassName("feature")[0].style.color = coffee.color;
 document.getElementsByClassName("feature")[1].style.color = coffee.color;
 document.styleSheets[1].cssRules[0].style.setProperty("background-color", coffee.color);
