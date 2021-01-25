@@ -52,7 +52,10 @@ nav ul {
 nav ul li {
 	display: inline-block; /* makes horizontal, but able to declare margins */
 	margin: 0 2%; /* margin left-right, gets smaller as necessary */
-	color: rgb(70, 112, 190);
+}
+
+nav a {
+	color: rgb(57, 125, 214);
 }
 
 nav a:visited {
@@ -61,5 +64,5 @@ nav a:visited {
 
 nav a:hover {
 	text-decoration: none;
-	color: rgb(201, 125, 186);
+	color: rgb(36, 187, 207);
 }
